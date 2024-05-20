@@ -1,0 +1,26 @@
+﻿<Page x:Class="Police2.PageAdmin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Police2"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1200"
+      Title="PageAdmin">
+
+    <Grid>
+        <DataGrid x:Name="dataGridRequest" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="422" Margin="54,171,-344,-143" VerticalAlignment="Top" Width="1090" SelectionChanged="dataGridRequest_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="*" Visibility="Hidden"/>
+                <DataGridTextColumn Header="AutoNumber" Binding="{Binding AutoNumber}" Width="*"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+                <DataGridTextColumn Header="User" Binding="{Binding User}" Width="*"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <Button x:Name="buttonEdit" Content="Изменить" HorizontalAlignment="Left" Margin="54,617,0,-208" VerticalAlignment="Top" Width="496" Click="buttonEdit_Click" Height="41" FontSize="20"/>
+        <ComboBox Name="comboBoxStatus" HorizontalAlignment="Left" Margin="632,617,0,0" VerticalAlignment="Top" Width="512" Height="41"/>
+
+    </Grid>
+</Page>

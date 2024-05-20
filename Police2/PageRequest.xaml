@@ -1,0 +1,24 @@
+﻿<Page x:Class="Police2.PageRequest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Police2"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1200"
+      Title="PageRequest">
+
+    <Grid>
+        <DataGrid x:Name="dataGridRequest" IsReadOnly="True" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="422" Margin="54,171,0,0" VerticalAlignment="Top" Width="1090" SelectionChanged="dataGridRequest_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" Width="*" Visibility="Hidden"/>
+                <DataGridTextColumn Header="AutoNumber" Binding="{Binding AutoNumber}" Width="*"/>
+                <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="*"/>
+                <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="*"/>
+            </DataGrid.Columns>
+            
+        </DataGrid>
+        <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Margin="54,617,0,0" VerticalAlignment="Top" Width="496" Click="buttonRegistration_Click" Height="41" FontSize="20"/>
+
+    </Grid>
+</Page>

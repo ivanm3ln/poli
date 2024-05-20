@@ -1,0 +1,19 @@
+﻿<Page x:Class="Police2.PageAddRequest"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Police2"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="1200"
+      Title="PageAddRequest">
+
+    <Grid>
+        <Button x:Name="buttonAdd" Content="Добавить" HorizontalAlignment="Left" Margin="54,617,0,0" VerticalAlignment="Top" Width="496" Click="buttonAdd_Click" Height="41" FontSize="20"/>
+        <TextBox x:Name="textBoxAutoNumber" HorizontalAlignment="Left" Height="47" Margin="391,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="627" FontSize="20"/>
+        <TextBox x:Name="textBoxDescription" HorizontalAlignment="Left" Height="47" Margin="391,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="627" FontSize="20"/>
+        <Label Content="Номер авто" HorizontalAlignment="Left" Margin="28,84,0,0" VerticalAlignment="Top" Height="47" Width="251" FontSize="20"/>
+        <Label Content="Описание" HorizontalAlignment="Left" Margin="28,161,0,0" VerticalAlignment="Top" Height="47" Width="251" FontSize="20"/>
+
+    </Grid>
+</Page>
